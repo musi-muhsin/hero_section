@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Test Iroid Technologies</title>
+     
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- css links  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    
+    <div class="container">
+      <!-- header  -->
+      <header>
+        <div class="logo">Hero</div>
+        <div class="d-flex align-items-center gap-5">
+          <nav class="d-none d-md-flex align-items-center">
+            <a href="#" class="active">Home</a>
+            <a href="#">Features</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+            <a href="#">About Us</a>
+          </nav>
+          <div class="sidebarToggleButton" id="sidebarToggleButton">
+            <div class="menu__icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- hero  -->
+      <section class="hero d-flex">
+        <div class="row d-flex align-items-center">
+          <!-- hero left  -->
+          <div class="col-lg-6 col-md-12 order-2 order-lg-1">
+            <div class="Hero-text">
+              <div class="me-md-5 fade-in-section " >
+                <h2>Build Your Best Community Starting from here.</h2>
+                <p>Meet and communication with the best people to run projects,
+                  events or other activities in a more effective and fun away
+                </p>
+                <div class="d-flex align-items-center gap-3">
+                  <button class="btn btn-primary">Get Started</button>
+                  <button class="btn btn-learnmore">
+                    Learn more
+                    <svg width="14" height="14" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg" >
+                      <path fill="#fff" d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414Z" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="d-md-flex flex-row gap-4 fade-in-section"  >
+                <div class="icons d-flex align-items-center gap-3">
+                  <img src="assets/icons/icon1.png" />
+                  <p> Build <br />
+                    Community
+                  </p>
+                </div>
+                <div class="icons d-flex align-items-center gap-3">
+                  <img src="assets/icons/icon2.png" />
+                  <p> Share <br />
+                    Events
+                  </p>
+                </div>
+                <div class="icons d-flex align-items-center gap-3">
+                  <img src="assets/icons/icon3.png" />
+                  <p> Get <br />
+                    Information
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--hero right  -->
+          <div class="col-lg-6 col-md-12 order-1 order-lg-2">
+            <div class="Hero-image">
+              <div class="image-columns">
+                <img src="assets/images/img1.png" class="w-100 fade-in-section" />
+                <img src="assets/images/img5.png" class="w-100 fade-in-section" />
+              </div>
+              <div class="image-columns"> 
+                <img src="assets/images/img4.png" class="w-100 fade-in-section" />
+                <img src="assets/images/img3.png" class="w-100 fade-in-section" />
+              </div>
+              <div class="image-columns">
+                <img src="assets/images/img2.png" class="w-100 fade-in-section" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--Side Open Menu  -->
+    <div class="sideModal z-3 top-0 position-fixed" id="openProfileSideOffcanvas">
+      <div class="closeIcon position-relative right-0">
+        <svg id="closeIcon"
+          class="position-absolute top-0 right-0 m-3" width="35" height="35" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path  d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59L7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12L5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"/>
+        </svg>
+      </div>
+      <div class="container vh-100">
+        <div class="row d-flex align-items-center">
+          <!-- column  -->
+          <div class="col-md-7">
+            <nav class="d-flex flex-column gap-3 py-5">
+              <a href="" class="navbar-items">HOME</a>
+              <a href="" class="navbar-items">FEATURES</a>
+              <a href="" class="navbar-items">BLOG</a>
+              <a href="" class="navbar-items">CONTACT</a>
+              <a href="" class="navbar-items">ABOUT US</a>
+            </nav>
+          </div>
+          <!-- column  -->
+          <div class="col-md-5 d-none d-md-block">
+            <div class="offcanvas__right d-flex flex-column gap-3">
+              <div class="offcanvas__search">
+                <form action="#">
+                  <input type="text" name="search" placeholder="Search keyword" />
+                  <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" >
+                    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m21 21l-4.343-4.343m0 0A8 8 0 1 0 5.343 5.343a8 8 0 0 0 11.314 11.314Z"/>
+                  </svg>
+                </form>
+              </div>
+              <div class="offcanvas__contact">
+                <h3>Get in touch</h3>
+                <ul>
+                  <li><a href="tel:02094980547">+(02) - 094 980 547</a></li>
+                  <li><a href="mailto:info@extradesign.com">iroidTechnologies.com</a> </li>
+                  <li> Trust building, Kayyath Ln, Palarivattom, Kochi, Kerala
+                       682025
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- script links  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js" ></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
